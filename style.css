@@ -1,6 +1,6 @@
 /*Colors to use:
 white
-ff8b00 - Yacht Club Games' orange color in logo
+f2902d - Yacht Club Games' orange color in logo
 333333 - good dark gray to contrast the color of the orange
 00acc6 - contrasting blue, good for Gunvolt hover(game)
 2a6a99 - darker blue, for Shovel Knight hover (game)
@@ -17,7 +17,7 @@ ff8b00 - Yacht Club Games' orange color in logo
   Mobile friendly - */
 
   body {
-    background-color: #ff8b00 !important;
+    background-color: #f2902d !important;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
