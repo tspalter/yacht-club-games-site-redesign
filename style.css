@@ -18,6 +18,9 @@ ff8b00 - Yacht Club Games' orange color in logo
 
   body {
     background-color: #ff8b00 !important;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #logo {
