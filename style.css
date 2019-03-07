@@ -1,0 +1,21 @@
+/*Colors to use:
+white
+ff8b00 - Yacht Club Games' orange color in logo
+333333 - good dark gray to contrast the color of the orange
+00acc6 - contrasting blue, good for Gunvolt hover(game)
+2a6a99 - darker blue, for Shovel Knight hover (game)
+662d91*/
+
+/*TO DO LIST:
+  Tailor page to audience -
+  3 proper calls to action -
+  Large volume of text, tables, forms, etc. -
+  Good variety of content -
+  Easy to navigate -
+  4 high quality images -
+  Style is as good or better than current site -
+  Mobile friendly - */
+
+  body {
+    background-color: #ff8b00;
+  }
