@@ -35,7 +35,8 @@ f2902d - Yacht Club Games' orange color in logo
   }
 
   hr {
-    color: #dbdbdb;
+    color: #eeeeee;
+    z-index: 7;
   }
 
   .breakline {
