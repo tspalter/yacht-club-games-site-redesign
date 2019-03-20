@@ -1,6 +1,6 @@
 /*Colors to use:
 white
-f2902d - Yacht Club Games' orange color in logo
+ff8b00 - Yacht Club Games' orange color in logo
 333333 - good dark gray to contrast the color of the orange
 00acc6 - contrasting blue, good for Gunvolt hover(game)
 2a6a99 - darker blue, for Shovel Knight hover (game)
@@ -16,40 +16,101 @@ f2902d - Yacht Club Games' orange color in logo
   Style is as good or better than current site -
   Mobile friendly - */
 
+  * {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px;
+  }
+
   body {
     background-color: white !important;
   }
 
   h2 {
     margin-top: 50px;
+    margin-bottom: auto;
     color: white;
   }
+
 
   p {
     color: #662d91;
   }
 
   .header {
-    background-color: #f2902d !important;
-    margin-left: auto;
-    margin-right: auto;
-    position: fixed;
+    background-color: #ff8b00 !important;
+    position: relative;
+    margin: auto;
     width: 100%;
     top: 0;
-    margin-bottom: 100px;
+    height: 200px;
+    z-index: 2;
+
   }
 
   #logo {
-    float:left;
+    float: left;
+    width: 200px;
+    height:  200px;
   }
 
-  hr {
-    color: #bbbbbb;
-    z-index: 7;
+
+  .recent-tweets {
+    position: relative;
+    padding: auto;
   }
 
-  .breakline {
-    width: 100%;
-    margin-top: 200px;
-    position: fixed;
+  .playbutton {
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  /* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  position: block;
+
+  margin-top: 0px;
+  width: 20%;
+  padding: 0px;
+  height: 100%;
+}
+
+#center {
+  width: 60%;
+  z-index: -2;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin-top: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 60%;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {margin: auto !important;}
+}

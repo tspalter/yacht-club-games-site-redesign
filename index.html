@@ -1,23 +1,72 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Yacht Club Games</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Yacht Club Games</title>
+  <link rel="icon" type="image/ico" href="title bar logo.jpg" />
+
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+  <div class="column" id="left">
+    <img src="Shovel Knight Background Left.png" width="100%" height="100%" alt="">
+  </div>
+  <div class="column" id="center">
     <div class="header">
-      <a href="#home" title="Avast ye landlubbers!"><img id="logo" src="Yacht Club logo.jpg" alt=""></a>
-      <h2>The Best Game Company Born of a Yacht</h2>
-      <p>Some text about the company</p>
-      <hr class="breakline" />
+      <a href="#home" title="Avast ye!"><img id="logo" src="title bar logo.jpg" alt=""></a>
+      <h2>YACHT CLUB GAMES</h2>
+      <p>THE BEST GAME COMPANY BORN OF A YACHT</p>
+      <ul class="topnav">
+        <li><a href="#home">SHOVEL KNIGHT</a></li>
+        <li><a href="#news">PRESS KIT</a></li>
+        <li><a href="#contact">GUNVOLT</a></li>
+        <li class="right"><a href="#about">SUPPORT</a></li>
+      </ul>
       <!--Add some buttons for the different games and support, as well as links to social media, email, and Kickstarter-->
     </div>
+    <div class="w3-content w3-section" style="max-width:900px; max-height:500px">
+      <a href="https://yachtclubgames.com/2019/02/last-stop-before-treasure-trove/" title="Last Stop Before Treasure Trove"><img class="mySlides w3-animate-right" src="tt_campfire.png" style="width:100%"></a>
+      <a href="https://yachtclubgames.com/2018/08/the-shovel-knight-finale-treasure-trove-physical-version/" title="Treasure Trove Physical Version is Here!"><img class="mySlides w3-animate-right" src="Treasure Trove soon.png" style="width:100%"></a>
+      <a href="https://yachtclubgames.com/2018/08/shovel-knight-showdown/" title="Shovel Knight Showdown!"><img class="mySlides w3-animate-right" src="showdown_announce.png" style="width:100%"></a>
+      <a href="https://yachtclubgames.com/2018/04/two-million-copies-of-shovel-knight-sold/" title="Two Million Copies Sold!"><img class="mySlides w3-animate-right" src="salesUpdate2Million.png" style="width:100%"></a>
+      <a href="https://yachtclubgames.com/sk-merchandise/" title="Shovel Knight Merchandise!"><img class="mySlides w3-animate-right" src="merchUpdate.png" style="width:100%"></a>
+    </div>
 
+    <script>
+      var myIndex = 0;
+      carousel();
 
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000);
+      }
+    </script>
     <div class="recent-tweets">
+      <a class="twitter-timeline" href="https://twitter.com/YachtClubGames" data-width="100%" data-height="500">Tweets by Yacht Club Games</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       <!--Displays some recent tweets by YCG-->
     </div>
-  </body>
+    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FYachtClubGames%2F&width=200&layout=standard&action=like&size=small&show_faces=true&share=false&height=80&appId" width="200" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <div class="fb-like" data-href="https://www.facebook.com/YachtClubGames/" data-width="200" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+  </div>
+  <div class="column">
+    <img src="Shovel Knight Background Right.png" width="100%" height="100%" alt="">
+  </div>
+</body>
+
 </html>
